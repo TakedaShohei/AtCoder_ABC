@@ -36,6 +36,12 @@
           "lib/netcoreapp3.1/SourceExpander.Core.dll": {}
         }
       },
+      "SourceExpander.Embedder/2.5.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/SourceExpander.Embedder.targets": {}
+        }
+      },
       "SourceExpander.Generator/2.5.0": {
         "type": "package",
         "build": {
@@ -112,6 +118,22 @@
         "sourceexpander.core.nuspec"
       ]
     },
+    "SourceExpander.Embedder/2.5.0": {
+      "sha512": "S5MNfIVHCBRkINmd8F3zGBh+cQrZDKNR2G4mdwN3M7saiEWKdk4Y9q5NAF0zyGw5ig/MsbB9PVeFcy0lUOZ1zQ==",
+      "type": "package",
+      "path": "sourceexpander.embedder/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "analyzers/dotnet/cs/Base32768.dll",
+        "analyzers/dotnet/cs/SourceExpander.Embedder.dll",
+        "build/SourceExpander.Embedder.targets",
+        "buildTransitive/SourceExpander.Embedder.targets",
+        "sourceexpander.embedder.2.5.0.nupkg.sha512",
+        "sourceexpander.embedder.nuspec"
+      ]
+    },
     "SourceExpander.Generator/2.5.0": {
       "sha512": "YTZvxeUFAu+8T3SL0zB3T1dNIFWbF7yNhnpUQum1fM962qljFFFJLaw7+2AiiJzyrnG+g8hUN3GHHbycZfflJw==",
       "type": "package",
@@ -158,6 +180,7 @@
     ".NETCoreApp,Version=v3.1": [
       "AtCoderAnalyzer >= 1.2.0",
       "SourceExpander >= 2.5.0",
+      "SourceExpander.Embedder >= 2.5.0",
       "System.Runtime.CompilerServices.Unsafe >= 4.7.0",
       "ac-library-csharp >= 1.2.0"
     ]
@@ -208,6 +231,12 @@
             "version": "[1.2.0, )"
           },
           "SourceExpander": {
+            "target": "Package",
+            "version": "[2.5.0, )"
+          },
+          "SourceExpander.Embedder": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.5.0, )"
           },
