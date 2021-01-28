@@ -2,6 +2,34 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "SourceExpander/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "SourceExpander.Core": "2.5.0",
+          "SourceExpander.Generator": "2.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SourceExpander.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SourceExpander.dll": {}
+        }
+      },
+      "SourceExpander.Core/2.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/SourceExpander.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SourceExpander.Core.dll": {}
+        }
+      },
+      "SourceExpander.Generator/2.5.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/SourceExpander.Generator.targets": {}
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/4.7.0": {
         "type": "package",
         "compile": {
@@ -14,6 +42,50 @@
     }
   },
   "libraries": {
+    "SourceExpander/2.5.0": {
+      "sha512": "m4EcNRV4sDvspvMfGCx2Jy3+8aaelKpYu79O1eWaKmKjqrRHv6uE5eXyA5be7r4mjWIHLjSGJKNFVe10OXOQmw==",
+      "type": "package",
+      "path": "sourceexpander/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netstandard2.0/SourceExpander.dll",
+        "lib/netstandard2.0/SourceExpander.xml",
+        "sourceexpander.2.5.0.nupkg.sha512",
+        "sourceexpander.nuspec"
+      ]
+    },
+    "SourceExpander.Core/2.5.0": {
+      "sha512": "QYNTUg556q9yfP1JeiIZ62kXrY2tYv3CjgkmV4PDrf1326qS9tOTeR8YaRU4P466cbF3S1mVloXAIhrP/nPsIA==",
+      "type": "package",
+      "path": "sourceexpander.core/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/netcoreapp3.1/SourceExpander.Core.dll",
+        "lib/netstandard2.0/SourceExpander.Core.dll",
+        "sourceexpander.core.2.5.0.nupkg.sha512",
+        "sourceexpander.core.nuspec"
+      ]
+    },
+    "SourceExpander.Generator/2.5.0": {
+      "sha512": "YTZvxeUFAu+8T3SL0zB3T1dNIFWbF7yNhnpUQum1fM962qljFFFJLaw7+2AiiJzyrnG+g8hUN3GHHbycZfflJw==",
+      "type": "package",
+      "path": "sourceexpander.generator/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "analyzers/dotnet/cs/Base32768.dll",
+        "analyzers/dotnet/cs/SourceExpander.Generator.dll",
+        "build/SourceExpander.Generator.targets",
+        "buildTransitive/SourceExpander.Generator.targets",
+        "sourceexpander.generator.2.5.0.nupkg.sha512",
+        "sourceexpander.generator.nuspec"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/4.7.0": {
       "sha512": "IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
       "type": "package",
@@ -42,6 +114,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "SourceExpander >= 2.5.0",
       "System.Runtime.CompilerServices.Unsafe >= 4.7.0"
     ]
   },
@@ -84,6 +157,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "SourceExpander": {
+            "target": "Package",
+            "version": "[2.5.0, )"
+          },
           "System.Runtime.CompilerServices.Unsafe": {
             "target": "Package",
             "version": "[4.7.0, )"
