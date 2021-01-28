@@ -50,12 +50,6 @@
               "target": "Package",
               "version": "[2.5.0, )"
             },
-            "SourceExpander.Embedder": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.5.0, )"
-            },
             "System.Runtime.CompilerServices.Unsafe": {
               "target": "Package",
               "version": "[4.7.0, )"

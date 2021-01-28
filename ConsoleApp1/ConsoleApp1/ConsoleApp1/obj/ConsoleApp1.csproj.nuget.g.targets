@@ -5,6 +5,5 @@
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)sourceexpander.generator\2.5.0\buildTransitive\SourceExpander.Generator.targets" Condition="Exists('$(NuGetPackageRoot)sourceexpander.generator\2.5.0\buildTransitive\SourceExpander.Generator.targets')" />
-    <Import Project="$(NuGetPackageRoot)sourceexpander.embedder\2.5.0\buildTransitive\SourceExpander.Embedder.targets" Condition="Exists('$(NuGetPackageRoot)sourceexpander.embedder\2.5.0\buildTransitive\SourceExpander.Embedder.targets')" />
   </ImportGroup>
 </Project>
