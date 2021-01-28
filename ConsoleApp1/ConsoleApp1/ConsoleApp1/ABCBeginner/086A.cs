@@ -7,7 +7,7 @@ namespace ConsoleApp1.ABCBeginner
 {
     class _086A
     {
-        private static void Select(string[] args)
+        private static void Main(string[] args)
         {
             int A, B, C;
             var word = System.Console.ReadLine().Split(' ');

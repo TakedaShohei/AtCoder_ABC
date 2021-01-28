@@ -5,7 +5,7 @@ namespace ConsoleApp1.ABCBeginner
 {
     class example
     {
-        private static void Main(string[] args)
+        private static void Test(string[] args)
         {
             int a, b;
             
