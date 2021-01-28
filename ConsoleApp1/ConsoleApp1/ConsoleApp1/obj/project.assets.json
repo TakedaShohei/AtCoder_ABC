@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "ac-library-csharp/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AtCoderLibrary.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AtCoderLibrary.dll": {}
+        }
+      },
+      "AtCoderAnalyzer/1.2.0": {
+        "type": "package"
+      },
       "SourceExpander/2.5.0": {
         "type": "package",
         "dependencies": {
@@ -42,6 +54,36 @@
     }
   },
   "libraries": {
+    "ac-library-csharp/1.2.0": {
+      "sha512": "6zTQBC1GSYfl3Y6GbGugFIXhVBSgtJ3ejR4ISjEoZDOugkGJ17uEEsJMqq5ruIb45C66tMjP5VDc5zALk4vXCg==",
+      "type": "package",
+      "path": "ac-library-csharp/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "ac-library-csharp.1.2.0.nupkg.sha512",
+        "ac-library-csharp.nuspec",
+        "lib/netcoreapp3.1/AtCoderLibrary.dll",
+        "lib/netcoreapp3.1/AtCoderLibrary.xml"
+      ]
+    },
+    "AtCoderAnalyzer/1.2.0": {
+      "sha512": "lP9OnxMYt965LOk/q8GyKqkdN7hQeXhq7gjbUExAvle2vPRJixxxKLYLNKnO4/m2X3vWfL6lSeBdU9/EbYcK+g==",
+      "type": "package",
+      "path": "atcoderanalyzer/1.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AtCoderAnalyzer.dll",
+        "analyzers/dotnet/cs/ja-JP/AtCoderAnalyzer.resources.dll",
+        "atcoderanalyzer.1.2.0.nupkg.sha512",
+        "atcoderanalyzer.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "SourceExpander/2.5.0": {
       "sha512": "m4EcNRV4sDvspvMfGCx2Jy3+8aaelKpYu79O1eWaKmKjqrRHv6uE5eXyA5be7r4mjWIHLjSGJKNFVe10OXOQmw==",
       "type": "package",
@@ -114,8 +156,10 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AtCoderAnalyzer >= 1.2.0",
       "SourceExpander >= 2.5.0",
-      "System.Runtime.CompilerServices.Unsafe >= 4.7.0"
+      "System.Runtime.CompilerServices.Unsafe >= 4.7.0",
+      "ac-library-csharp >= 1.2.0"
     ]
   },
   "packageFolders": {
@@ -157,6 +201,12 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "AtCoderAnalyzer": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.2.0, )"
+          },
           "SourceExpander": {
             "target": "Package",
             "version": "[2.5.0, )"
@@ -164,6 +214,10 @@
           "System.Runtime.CompilerServices.Unsafe": {
             "target": "Package",
             "version": "[4.7.0, )"
+          },
+          "ac-library-csharp": {
+            "target": "Package",
+            "version": "[1.2.0, )"
           }
         },
         "imports": [

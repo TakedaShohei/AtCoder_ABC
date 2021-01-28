@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "z7wM3itPfWfc9+l5ZR1vXG7gMmOihMbZ/jJ+UucfzZ9SsTqPRbgaS2X3G06JzofGLGoX5y+iKMhoFaGrai7azQ==",
+  "dgSpecHash": "XCo3TFx7tGS55QUnRMJydrK7UOjhyPi33h1XyH6jLXtc8gCab9+YbBH2Rcm3F5D558dsYeO87rcBNZycQvrJIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\taked\\source\\repos\\ConsoleApp1\\AtCoder_ABC\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\taked\\.nuget\\packages\\ac-library-csharp\\1.2.0\\ac-library-csharp.1.2.0.nupkg.sha512",
+    "C:\\Users\\taked\\.nuget\\packages\\atcoderanalyzer\\1.2.0\\atcoderanalyzer.1.2.0.nupkg.sha512",
     "C:\\Users\\taked\\.nuget\\packages\\sourceexpander\\2.5.0\\sourceexpander.2.5.0.nupkg.sha512",
     "C:\\Users\\taked\\.nuget\\packages\\sourceexpander.core\\2.5.0\\sourceexpander.core.2.5.0.nupkg.sha512",
     "C:\\Users\\taked\\.nuget\\packages\\sourceexpander.generator\\2.5.0\\sourceexpander.generator.2.5.0.nupkg.sha512",
