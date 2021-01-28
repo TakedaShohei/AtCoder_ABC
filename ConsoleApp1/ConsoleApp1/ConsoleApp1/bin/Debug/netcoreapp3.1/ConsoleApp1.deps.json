@@ -7,10 +7,49 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "ConsoleApp1/1.0.0": {
+        "dependencies": {
+          "AtCoderAnalyzer": "1.2.0",
+          "SourceExpander": "2.5.0",
+          "SourceExpander.Embedder": "2.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.0",
+          "ac-library-csharp": "1.2.0"
+        },
         "runtime": {
           "ConsoleApp1.dll": {}
         }
-      }
+      },
+      "ac-library-csharp/1.2.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/AtCoderLibrary.dll": {
+            "assemblyVersion": "1.2.0.100",
+            "fileVersion": "1.2.0.100"
+          }
+        }
+      },
+      "AtCoderAnalyzer/1.2.0": {},
+      "SourceExpander/2.5.0": {
+        "dependencies": {
+          "SourceExpander.Core": "2.5.0",
+          "SourceExpander.Generator": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SourceExpander.dll": {
+            "assemblyVersion": "2.5.0.100",
+            "fileVersion": "2.5.0.100"
+          }
+        }
+      },
+      "SourceExpander.Core/2.5.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/SourceExpander.Core.dll": {
+            "assemblyVersion": "2.5.0.100",
+            "fileVersion": "2.5.0.100"
+          }
+        }
+      },
+      "SourceExpander.Embedder/2.5.0": {},
+      "SourceExpander.Generator/2.5.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.7.0": {}
     }
   },
   "libraries": {
@@ -18,6 +57,55 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ac-library-csharp/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6zTQBC1GSYfl3Y6GbGugFIXhVBSgtJ3ejR4ISjEoZDOugkGJ17uEEsJMqq5ruIb45C66tMjP5VDc5zALk4vXCg==",
+      "path": "ac-library-csharp/1.2.0",
+      "hashPath": "ac-library-csharp.1.2.0.nupkg.sha512"
+    },
+    "AtCoderAnalyzer/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lP9OnxMYt965LOk/q8GyKqkdN7hQeXhq7gjbUExAvle2vPRJixxxKLYLNKnO4/m2X3vWfL6lSeBdU9/EbYcK+g==",
+      "path": "atcoderanalyzer/1.2.0",
+      "hashPath": "atcoderanalyzer.1.2.0.nupkg.sha512"
+    },
+    "SourceExpander/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m4EcNRV4sDvspvMfGCx2Jy3+8aaelKpYu79O1eWaKmKjqrRHv6uE5eXyA5be7r4mjWIHLjSGJKNFVe10OXOQmw==",
+      "path": "sourceexpander/2.5.0",
+      "hashPath": "sourceexpander.2.5.0.nupkg.sha512"
+    },
+    "SourceExpander.Core/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QYNTUg556q9yfP1JeiIZ62kXrY2tYv3CjgkmV4PDrf1326qS9tOTeR8YaRU4P466cbF3S1mVloXAIhrP/nPsIA==",
+      "path": "sourceexpander.core/2.5.0",
+      "hashPath": "sourceexpander.core.2.5.0.nupkg.sha512"
+    },
+    "SourceExpander.Embedder/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S5MNfIVHCBRkINmd8F3zGBh+cQrZDKNR2G4mdwN3M7saiEWKdk4Y9q5NAF0zyGw5ig/MsbB9PVeFcy0lUOZ1zQ==",
+      "path": "sourceexpander.embedder/2.5.0",
+      "hashPath": "sourceexpander.embedder.2.5.0.nupkg.sha512"
+    },
+    "SourceExpander.Generator/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YTZvxeUFAu+8T3SL0zB3T1dNIFWbF7yNhnpUQum1fM962qljFFFJLaw7+2AiiJzyrnG+g8hUN3GHHbycZfflJw==",
+      "path": "sourceexpander.generator/2.5.0",
+      "hashPath": "sourceexpander.generator.2.5.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
     }
   }
 }
