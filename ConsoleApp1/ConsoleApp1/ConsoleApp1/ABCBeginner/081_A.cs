@@ -5,9 +5,9 @@ using System.Linq;
 
 namespace ConsoleApp1.ABCBeginner
 {
-    class _081_A
+    /*class _081_A
     {
-        static void Main(string[] args)
+        private static _main_()
         {
 
             string s = Console.ReadLine();
@@ -15,5 +15,5 @@ namespace ConsoleApp1.ABCBeginner
 
 
         }
-    }
+    }*/
 }

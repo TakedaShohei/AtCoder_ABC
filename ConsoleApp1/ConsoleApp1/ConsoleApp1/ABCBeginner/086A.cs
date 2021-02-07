@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.ABCBeginner
 {
-    class _086A
+    /*class _086A
     {
         private static void Main(string[] args)
         {
@@ -27,5 +27,5 @@ namespace ConsoleApp1.ABCBeginner
 
             //Console.ReadKey();
         }
-    }
+    }*/
 }

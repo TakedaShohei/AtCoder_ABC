@@ -22,4 +22,14 @@
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="4.7.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ABCBeginner\AlrgorismData\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ABCBeginner\Program.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>
