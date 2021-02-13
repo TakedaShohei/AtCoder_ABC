@@ -10,23 +10,22 @@ namespace ConsoleApp1
         static void Main()
         {
             SourceExpander.Expander.Expand();
+
+            int N = int.Parse(Console.ReadLine());
+            var line_ = System.Console.ReadLine().Split(' ');
+            int count_ = 0;
+            int[] Sarray_ = new int[N];
+            for (int i = 0; i < N; i++)
+            {
+                array_[i] = int.Parse(line_[i]);
+                i++;
+                if (array_[i] / 2 = 0)
+                {
+
+                }
+            }
+
             
-
-            int A, B, C;
-            var word = System.Console.ReadLine().Split(' ');
-            A = int.Parse(word[0]);
-            B = int.Parse(word[1]);
-            C = int.Parse(word[2]);
-
-            if
-               (A + B + C == 17)
-            {
-                System.Console.WriteLine("YES");
-            }
-            else
-            {
-                System.Console.WriteLine("NO");
-            }
         }
     }
     struct Op : ISegtreeOperator<long>
